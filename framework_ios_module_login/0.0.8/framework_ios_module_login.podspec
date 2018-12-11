@@ -110,7 +110,9 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "LoginModule/LoginModule/**/*.xib"
+  s.resource_bundles = {
+    'framework_ios_module_login' => ['LoginModule/LoginModule/**/*.xib']
+  }
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
